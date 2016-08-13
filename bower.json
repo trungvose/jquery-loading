@@ -1,0 +1,27 @@
+{
+  "name": "jquery-loading",
+  "description": "Show a \"loading\" indicator while element (could be text, image and so on) is loading from server",
+  "main": "",
+  "keywords": [
+    "jquery",
+    "loading",
+    "indicator",
+    "scss"
+  ],
+  "authors": [
+    "trungk18"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/trungk18/jquery-loading",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-3.1.0.min": "https://code.jquery.com/jquery-3.1.0.min.js"
+  }
+}

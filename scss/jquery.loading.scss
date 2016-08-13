@@ -1,0 +1,83 @@
+﻿@import '../bourbon/bourbon';
+
+$color-blue: #3498db;
+$color-light-red: #e74c3c;
+$color-yellow: #f9c922;
+
+.col-4 {
+    width: 33.333333%;
+    float: left;
+}
+
+.loading {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin: 60px auto;
+}
+
+.js-loading-indicator {
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: $color-blue;
+    border-right-color: $color-blue;
+    @include animation(spin 2s linear infinite);
+    z-index: 1002;
+    width: 100%;
+    height: 100%;
+}
+
+.js-loading-indicator.double {
+    &::before {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border: 3px solid transparent;
+        border-top-color: $color-light-red;
+        @include animation(spin 3s linear infinite);
+    }
+}
+
+.js-loading-indicator.triple {
+
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        border: 3px solid transparent;
+    }
+
+    &::before {
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-top-color: $color-light-red;
+        @include animation(spin 3s linear infinite);
+    }
+
+    &::after {
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-top-color: $color-yellow;
+        @include animation(spin 1.5s linear infinite);
+    }
+}
+
+@include keyframes(spin) {
+    from {
+        @include transform(rotate(0));
+    }
+
+    to {
+        @include transform(rotate(360deg));
+    }
+}
