@@ -1,6 +1,7 @@
 # Logs
 logs
 *.log
+.sass-cache
 
 #Bourbon
 bourbon
