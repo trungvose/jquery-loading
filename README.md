@@ -6,7 +6,7 @@ Show a "loading" indicator while element (could be text, image and so on) is loa
 
 ## Getting started
 
-#Install it, using [Bower](http://bower.io/):
+###Install it, using [Bower](http://bower.io/):
 
 ```sh
 $ bower install jquery-loading-indicator
