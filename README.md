@@ -1,6 +1,6 @@
 # jquery-loading
 
-[![Build Status](https://travis-ci.org/CarlosBonetti/jquery-loading.svg)](https://travis-ci.org/CarlosBonetti/jquery-loading)
+[![Build Status](https://travis-ci.org/trungk18/jquery-loading.svg)](https://travis-ci.org/trungk18/jquery-loading)
 
 Show a "loading" indicator while element (could be text, image and so on) is loading from server
 
