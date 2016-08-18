@@ -12,7 +12,7 @@ Show a "loading" indicator while element (could be text, image and so on) is loa
 $ bower install jquery-loading-indicator
 ```
 
-#Include it:
+###Include it:
 
 ```html
 <!-- jQuery -->
@@ -23,16 +23,16 @@ $ bower install jquery-loading-indicator
 <link href="css/jquery-loading.css" rel="stylesheet">
 ```
 
-#Use it:
+###Use it:
 
 ```javascript
 $('#loading').loading({ circles: 3 });
 ```
-#Demo
+###Demo
 [http://codepen.io/trungk18/pen/wWoLYR](http://codepen.io/trungk18/pen/wWoLYR)
 
 
-#Available options
+###Available options
 
 ```javascript
 defaults = {
