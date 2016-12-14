@@ -67,6 +67,15 @@ $color-yellow: #f9c922;
     }
 }
 
+.js-loading-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(128, 128, 128, 0.5)
+}
+
 @include keyframes(spin) {
     from {
         @include transform(rotate(0));

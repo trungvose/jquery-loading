@@ -4,6 +4,12 @@
 
 Show a "loading" indicator while element (could be text, image and so on) is loading from server
 
+##Docs and demo
+
+1. [http://trungk18.github.io/jquery-loading/](http://trungk18.github.io/jquery-loading/)
+
+2. [http://codepen.io/trungk18/pen/wWoLYR](http://codepen.io/trungk18/pen/wWoLYR)
+
 ## Getting started
 
 ###Install it, using [Bower](http://bower.io/):
@@ -30,22 +36,17 @@ $ bower install jquery-loading-indicator
 $('#loading').loading({ circles: 3 });
 ```
 
-- Hide loading: hide the loading indicator of its container.
+- Hide loading indicator from its container.
 
 ```javascript
 $('#loading').loading({ hide: true});
 ```
 
-- Destroy loading: remove the loading indicator of its container from the DOM.
+- Destroy loading indicator from its container from the DOM.
 
 ```javascript
 $('#loading').loading({ destroy: true });
 ```
-
-
-###Demo
-[http://codepen.io/trungk18/pen/wWoLYR](http://codepen.io/trungk18/pen/wWoLYR)
-
 
 ###Available options
 
