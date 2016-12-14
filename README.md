@@ -25,18 +25,18 @@ $ bower install jquery-loading-indicator
 
 ###Use it:
 
-1. Init loading
+- Init loading
 ```javascript
 $('#loading').loading({ circles: 3 });
 ```
 
-2. Hide loading: hide the loading indicator of its container.
+- Hide loading: hide the loading indicator of its container.
 
 ```javascript
 $('#loading').loading({ hide: true});
 ```
 
-3. Destroy loading: remove the loading indicator of its container from the DOM.
+- Destroy loading: remove the loading indicator of its container from the DOM.
 
 ```javascript
 $('#loading').loading({ destroy: true });

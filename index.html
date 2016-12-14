@@ -1,44 +1,49 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Hire Me, Vo Tuan Trung, Tuan Trung, trungk18, Little Green">
-    <meta name="author" content="Vo Tuan Trung">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hire Me, Vo Tuan Trung, Tuan Trung, trungk18, Little Green">
+  <meta name="author" content="Vo Tuan Trung">
 
-    <meta property="og:url" content="http://trungk18.github.io/" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Hire Me - Vo Tuan Trung" />
-    <meta property="og:description" content="I help companies and agencies build standards-compliant front-ends for fast, accessible and responsive web sites and applications." />
-    <meta property="og:image" content="http://trungk18.github.io/img/facebook-logo.jpg" />
+  <meta property="og:url" content="http://trungk18.github.io/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Hire Me - Vo Tuan Trung" />
+  <meta property="og:description" content="I help companies and agencies build standards-compliant front-ends for fast, accessible and responsive web sites and applications." />
+  <meta property="og:image" content="http://trungk18.github.io/img/facebook-logo.jpg" />
 
-    <title>Vo Tuan Trung - jQuery Loading</title>
+  <title>Vo Tuan Trung - jQuery Loading</title>
 
-    <!-- Custom CSS -->
-    <link href="css/jquery-loading.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/jquery-loading.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+  <!-- Custom Fonts -->
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
 </head>
 <body id="page-top" class="index">
-    <div id="loading" style="border:1px solid #000000;height:100px;width:200px;margin: 60px auto;">
+  <div id="loading1" class="loading" style="border:1px solid #000000;height:100px;width:200px;margin: 60px auto;">
 
-    </div>
-    <!-- jQuery -->
-    <script src="js/vendor/jquery-3.1.0.min/index.js"></script>
-    <script src="js/jquery-loading.js"></script>
+  </div>
+  <div id="loading2" class="loading" style="border:1px solid #000000;height:100px;width:200px;margin: 60px auto;">
 
-    <script>
-        $(document).ready(function () {
-            $('#loading').loading({ circles: 3 });
-        })
-    </script>
+  </div>
+  <!-- jQuery -->
+  <script src="js/vendor/jquery-3.1.0.min/index.js"></script>
+  <script src="js/jquery-loading.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.loading').loading({ circles: 3 });
+      //$('#loading1').loading({ destroy: true });  //destroy loading 1
+      //$('#loading2').loading({ hide: true });  //hide loading 2
+    })
+  </script>
 </body>
 </html>
