@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Loading</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Vo Tuan Trung">
+  <meta name="description" content="jQuery loading - A lightweight library to show a loading indicator while element is retrieving from server.">
+  <meta property="og:description" content="jQuery Loading - A lightweight library to show a loading indicator while element is retrieving from server.">
+
+  <link rel="image_src" href="favicon.png" type="image/png">
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/default.css" />
+  <link rel="stylesheet" href="css/cayman.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" />
+  <link href="css/jquery-loading.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/jquery-loading.js"></script>
+  <script src="js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script>
+    $(document).ready(function () {
+      $('.card-loading-1').loading({ circles: 1, overlay: true });
+      $('.card-loading-2').loading({ circles: 2 });
+      $('.card-loading-3').loading({ circles: 3, overlay: true });
+    });
+  </script>
+</head>
+<body>
+  <section class="page-header">
+    <h1 class="project-name">jquery-loading</h1>
+    <h2 class="project-tagline">A lightweight library to show a "loading" indicator while element is retrieving from server</h2>
+    <a target="_blank" href="https://github.com/trungk18/jquery-loading" class="btn">View on GitHub</a>
+    <a target="_blank" href="https://github.com/trungk18/jquery-loading/zipball/master" class="btn">Download .zip</a>
+    <a target="_blank" href="https://github.com/trungk18/jquery-loading/tarball/master" class="btn">Download .tar.gz</a>
+    <p>
+      <a target="_blank" href="http://trungk18.github.io/" class="btn">Follow @trungk18</a>
+    </p>
+  </section>
+  <section class="main-content">
+    <h1>
+      <a class="anchor" href="#header-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction
+    </h1>
+    <p>The idea is to lock elements that are loading (while working with Ajax request, for example) but keeping the rest of the page available to the user.</p>
+
+    <h1>
+      <a class="anchor" href="#header-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting started
+    </h1>
+
+    <ol class="task-list">
+      <li>
+        <p>Install from Bower</p>
+        <pre><code>$ bower install jquery-loading-indicator</code></pre>
+      </li>
+      <li>
+        <p>Include jquery, jquery-loading and jquery-loading stylesheet in your page:</p>
+      </li>
+      <li>
+        <p>Call the plugin in the element you want to add the loading state:</p>
+        <p><strong>Init loading.</strong></p>
+        <pre><code>$('#loading').loading({ circles: 3 });</code></pre>
+        <p><strong>Hide loading indicator from its container.</strong></p>
+        <pre><code>$('#loading').loading({ hide: true});</code></pre>
+        <p><strong>Destroy loading indicator from its container.</strong></p>
+        <pre><code>$('#loading').loading({ destroy: true });</code></pre>
+      </li>
+    </ol>
+
+    <h1>
+      <a class="anchor" href="#header-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Basic usage
+    </h1>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-block card-loading-1">
+            <h3 class="card-title">Interstellar	</h3>
+            <p class="card-text">In the film, a crew of astronauts travel through a wormhole in search of a new home for humanity.</p>
+            <a href="#" class="btn btn-primary">Endurance</a>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <pre><code>$('.card-loading-1')
+.loading({ 
+  circles: 1, 
+  overlay: true 
+});</code></pre>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-block card-loading-2">
+            <h3 class="card-title">Interstellar	</h3>
+            <p class="card-text">In the film, a crew of astronauts travel through a wormhole in search of a new home for humanity.</p>
+            <a href="#" class="btn btn-primary">Endurance</a>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <pre><code>$('.card-loading-2')
+.loading({ 
+  circles: 2, 
+  overlay: false //default 
+});</code></pre>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-block card-loading-3">
+            <h3 class="card-title">Interstellar	</h3>
+            <p class="card-text">In the film, a crew of astronauts travel through a wormhole in search of a new home for humanity.</p>
+            <a href="#" class="btn btn-primary">Endurance</a>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <pre><code>$('.card-loading-3')
+.loading({ 
+  circles: 3, 
+  overlay: true
+});</code></pre>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h1>
+      <a class="anchor" href="#header-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Available options
+    </h1>
+    <pre><code>$('#loading').loading({
+    overlay: false, // add an overlay background
+    width: null, // set fixed width to loading indicator, otherwise calculated relative to element
+    indicatorHtml: "<div class='js-loading-indicator' style='display: none;'></div>",
+    overlayHtml: "<div class='js-loading-overlay' style='display: none;'></div>",
+    base: 0.9, // indicator's width/height relative to element
+    circles: 3, // number of indicator circles: maximum is 3
+    top: null, //indicator position relative to the top of its container
+    left: null, //indicator position relative to the left of its container
+    hide: false, // hide the indicator of the current element
+    destroy: false //remove the indicator from the DOM
+});</code></pre>
+
+    <footer class="site-footer">
+      <span class="site-footer-credits">2016 &copy; <a target="_blank" href="http://codepen.io/trungk18/">@trungk18</a> & <a href="https://github.com/tunghoanganh">@tunghoang</a></span>
+      <span class="site-footer-owner"><a target="_blank" href="https://github.com/jasonlong/cayman-theme">Cayman</a> is maintained by <a href="https://github.com/jasonlong">jasonlong</a>.</span>
+    </footer>
+  </section>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-80363801-3', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
