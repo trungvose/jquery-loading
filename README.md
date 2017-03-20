@@ -4,7 +4,7 @@
 
 Show a "loading" indicator while element (could be text, image and so on) is loading from server
 
-##Docs and demo
+## Docs and demo
 
 1. [http://trungk18.github.io/jquery-loading/](http://trungk18.github.io/jquery-loading/)
 
@@ -12,13 +12,13 @@ Show a "loading" indicator while element (could be text, image and so on) is loa
 
 ## Getting started
 
-###Install it, using [Bower](http://bower.io/):
+### Install it, using [Bower](http://bower.io/):
 
 ```sh
 $ bower install jquery-loading-indicator
 ```
 
-###Include it:
+### Include it:
 
 ```html
 <!-- jQuery -->
@@ -29,7 +29,7 @@ $ bower install jquery-loading-indicator
 <link href="css/jquery-loading.css" rel="stylesheet">
 ```
 
-###Use it:
+### Use it:
 
 - Init loading
 ```javascript
@@ -48,7 +48,7 @@ $('#loading').loading({ hide: true});
 $('#loading').loading({ destroy: true });
 ```
 
-###Available options
+### Available options
 
 ```javascript
 $('#loading').loading({
